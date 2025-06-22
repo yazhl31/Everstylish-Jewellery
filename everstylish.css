@@ -1,0 +1,310 @@
+/* styles.css */
+body,html{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align:end;
+    margin-left: 400px;
+}
+
+header{
+    background-color: white;
+    height: 50px;
+    padding: 0;
+}
+nav {
+    background-color:white; /* Adjust as needed */
+
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: end;
+    margin-left: 400px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: palevioletred;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 15px; /* Adjust spacing as needed */
+}
+
+.navbar a {
+    color: white; /* Adjust text color */
+    text-decoration: none;
+    font-size: 18px; /* Adjust font size */
+}
+
+.navbar a:hover {
+    text-decoration: underline; /* Add hover effect if needed */
+}
+
+header img
+{
+    position: absolute;
+    height: 50px;
+float:left;
+top:10px;
+left:20px;
+}
+main {
+    background-color:white;
+}
+
+section {
+    margin: 2em 0;
+}
+
+footer {
+    background-color: white;
+    color: palevioletred;
+    text-align: center;
+    padding: 1em 0;
+}
+
+#home
+{
+    height: 400px;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 10px;
+}
+
+#home  h1
+{
+color: black;
+margin-left: 300px;
+margin-top: 10px;
+font-family: 'Times New Roman', Times, serif;
+font-size:250%;
+text-decoration: underline;
+text-decoration-color: #82560e;
+}
+
+#home p
+{
+    font-size: 25px;
+    text-align: start;
+    margin-left: 30px;
+    color: #82560e;
+}
+#home button
+{
+    margin-left: 430px;
+    width: 130px;
+    height: 40px;
+    background-color: #82560e;
+    color: black;
+    border: none;
+    border-radius: 20px;
+}
+#home button:hover
+{
+    background-color: white;
+}
+
+#about
+{
+    background-image: url(bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    margin-left: 0px;
+}
+
+#about button
+{
+    margin-left: 520px;
+    color: white;
+    background-color:purple;
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+}
+#about button:hover
+{
+    background-color:rgb(135, 82, 135);
+}
+
+
+
+#about h2{
+    margin-left: 50px;
+    padding-top: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 300%;
+    color: rgb(108, 60, 91);
+    text-decoration-line: underline;
+    text-decoration-color: #82560e;
+}
+#about p
+{
+    color: rgb(108, 60, 91);
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 20px;
+
+}
+
+#about h3
+{
+    margin-left: 30px;
+    font-family:Copperplate, Papyrus, fantasy;
+    color: #82560e;
+    font-size: 45px;
+text-decoration: dotted;
+}
+
+#services
+{
+    background-image: url(bg3.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+    height: 1000px;
+    padding-left: 30px;
+    box-sizing:border-box;
+    width: 100%;
+    padding-top: 20px;
+}
+#services h2
+{
+    color: #000000;
+    margin-left: 450px;
+    font-size: 300%;
+   font-family: Brush Script MT,Brush Script Std, cursive;
+}
+#services p
+{
+    color: #82560e;
+}
+.photo-row
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+}
+.photo-row2
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.image-item {
+    margin: 10px;
+    text-align: center;
+
+}
+
+.image-item img {
+   width: 250px;
+    height: 300px;
+    display: block;
+    margin-left: 0px;
+    border-radius: 20px;
+}
+
+.image-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #82560e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.image-button:hover {
+    background-color: #8a734f;
+}
+#contact
+{
+    background-image: url(conct.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 380px;
+}
+#contact h2
+{
+    color: #82560e;
+    font-size: 60px;
+    margin-left: 440px;
+    padding-top: 20px;
+}
+
+#contact p
+{
+    color: black;
+    margin-left: 30px;
+}
+#contact button
+{
+    margin-left: 580px;
+    height: 30px;
+    width: 80px;
+    background-color: #82560e;
+    border: none;
+    border-radius: 5px;
+}
+#contact button:hover{
+  background-color: #8a734f;
+}
+.social-media-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+.social-media-icon {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+}
+
+.social-media-icon:hover {
+    color: palevioletred;
+}
+@media (max-width: 480px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}

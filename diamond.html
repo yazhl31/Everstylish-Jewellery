@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diamond</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: palevioletred;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    margin-left: 60px;
+}
+
+.image-container img {
+    width: 300px;
+    height:300px;
+    transition: all 0.3s ease;
+
+}
+.image-container img:hover {
+
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.hover-text {
+    position: absolute;
+    top:95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:pink;
+    color:black;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 300px;
+    text-align: center;
+}
+
+.image-container:hover .hover-text {
+    opacity: 1;
+    
+}
+h1{
+    margin-left: 470px;
+    font-family:Copperplate, Papyrus, fantasy ;
+}
+i
+{
+    margin-left: 160px;
+}
+
+.cart-display {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.cart-display i {
+    font-size: 28px;
+    color:black;
+    margin-right: 5px;
+}
+
+#cart-count {
+   
+    font-size: 18px;
+    color: palevioletred;
+    background-color:white;
+    border-radius: 50%;
+    padding: 4px 8px;
+    position: relative;
+    top: -10px;
+    right: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="cart-display">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cart-count">0</span>
+    </div>
+    
+<h1>NEW ARRIVALS</h1>
+    <div class="image-container">
+        <img src="di10.jpg" alt="1 Image">
+        <div class="hover-text">₹18,799
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+        
+    </div>
+    <div class="image-container">
+        <img src="di14.jpg" alt="2 Image">
+        <div class="hover-text">₹1,28,000
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="di12.jpg" alt="3 Image">
+        <div class="hover-text">₹46,699
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="di4.jpg" alt="4 Image">
+        <div class="hover-text">₹1,90,999
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="di6.webp" alt="5 Image">
+        <div class="hover-text">₹25,699
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="di5.jpg" alt="6 Image">
+        <div class="hover-text">₹1,36,699
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="di1.jpg" alt="7 Image">
+        <div class="hover-text">₹2,00,000
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="di2.jpg" alt="8 Image">
+        <div class="hover-text">₹46,699
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="di15.jpg" alt="9 Image">
+        <div class="hover-text">₹96,999
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="di9.jpg" alt="10 Image">
+        <div class="hover-text">₹47,000
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="di11.jpg" alt="11 Image">
+        <div class="hover-text">₹85,899
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="di13.jpg" alt="12 Image">
+        <div class="hover-text">₹96,699
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="di16.jpg" alt="13 Image">
+        <div class="hover-text">₹50,699
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="di17.jpg" alt="14 Image">
+        <div class="hover-text">₹40,999
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="di18.jpg" alt="15 Image">
+        <div class="hover-text">₹26,000
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </div>
+    <script>
+        // Initial cart count
+        let cartCount = 0;
+    
+        // Function to update the cart count display
+        function updateCartCount() {
+            document.getElementById('cart-count').textContent = cartCount;
+        }
+    
+        // Add event listener to each cart icon
+        document.querySelectorAll('.image-container i').forEach(icon => {
+            icon.addEventListener('click', (event) => {
+                event.stopPropagation(); // Prevents event bubbling to other elements
+                cartCount++; // Increment cart count
+                updateCartCount(); // Update display
+                alert('Item added to cart!');
+            });
+        });
+    </script>
+    
+    
+
+</body>
+</html>

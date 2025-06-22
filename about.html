@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        
+        fieldset
+        {
+            background-image: url(fyllsets.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 1000px;
+            font-size: 40px;
+            color:rgb(0, 0, 0)
+        }
+        .container {
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color:white;
+            opacity: 70%;
+            height: 950px;
+            font-size: 30px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        textarea{
+            height: 300px;
+            width: 900px;
+        }
+        button{
+            margin-left: 550px;
+            height: 40px;
+            width: 100px;
+            background-color: black;
+            color: white;
+            border: none;
+        }
+        button:hover
+        {
+            background-color: rgb(110, 110, 136);
+        }
+        
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>ABOUT US</legend>
+        <div class="container">
+            <p>How was the Quality of the Product?<p>
+            <input type="radio" name="Experience" value="Excellent">Excellent
+        </label><br>
+        <label>
+            <input type="radio" name="Experience" value="Good"> Good
+        </label><br>
+        <label>
+            <input type="radio" name="Experience" value="Average">Average
+        </label><br>
+        <label>
+            <input type="radio" name="Experience" value="poor"> Poor
+        </label><br>
+        <p>How was your overall Experience?<p>
+            <input type="radio" name="Experience" value="Excellent">Excellent
+        </label><br>
+        <label>
+            <input type="radio" name="Experience" value="Good"> Good
+        </label><br>
+        <label>
+            <input type="radio" name="Experience" value="Average">Average
+        </label><br>
+        <label>
+            <input type="radio" name="Experience" value="poor"> Poor
+        </label><br><br>
+        <label for="Msg">Give us your Feedback</label><br><br>
+        <textarea id="Msg" name="Msg"></textarea>
+        <button type="submit">Submit</button>
+        </div>
+        
+
+
+    </fieldset>
+</body>
